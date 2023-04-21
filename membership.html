@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Point</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+   body {
+    font-family: 'Baloo Bhai', cursive;
+    color: rgb(18, 16, 17);
+    margin: 0px;
+    padding: 0px;
+    background: url('img/9.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+    opacity: 10;
+}
+.navbar li a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+
+       /* Style the membership container */
+.membership-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 34px;
+}
+
+/* Style the membership options */
+.membership-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the membership option */
+.membership-option {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.SILVER{
+color: rgb(12, 13, 14);
+font-size: 1.09rem;
+font-style: italic;
+font-weight: 400;
+}
+.GOLD{
+color: rgb(13, 14, 15);
+font-size: 1.09rem;
+font-style: italic;
+font-weight: 400;
+
+}
+.PLATIUM{
+color rgb(48, 76, 101);
+font-size: 1.09rem;
+font-style: italic;
+font-weight: 400;
+}
+
+.center{
+       justify-content: center;
+       text-align: center;
+       color: rgb(16, 2, 3);
+}
+
+/* Style the personal training options */
+.personal-training-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Style the personal training option */
+.personal-training-option {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+#peritem2{
+       color: rgb(15, 16, 15);
+}
+.peritem3{
+       font-size: 1.3rem;
+}
+.peritem3 a{
+       color:brown;
+}
+
+
+/* Style the select button */
+.btn-select {
+  color: rgb(6, 2, 2);
+  font-weight:600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn-select:hover{
+}    
+/* Style the buy button */
+.btn-buy {
+  color: rgb(24, 21, 21);
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn-buy:hover{
+       background-color: chartreuse;
+       color: #120101;
+} 
+/* Make the membership container responsive */
+@media screen and (max-width: 600px) {
+  .membership-option, .personal-training-option {
+    flex: 1 1 100%;
+  }
+}
+
+</style>
+<body>
+  <header class="header">
+    <!-- Left box for logo -->
+    <div class="left">
+        <img src="img/5.jpg" alt="">
+        <div>Fitness Point</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="membership.html">Membershib Package's</li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Right box for buttons -->
+    <div class="right">
+        <button class="btn">Sign up</button>
+    </div>
+    </header>
+       <div class="membership-container">
+              <h1 class="center">Choose Your Membership</h1>
+              <div class="membership-options backclo">
+                <div class="membership-option SILVER">
+                  <h2>SILVER</h2>
+                  <p>₨275/month</p>
+                  <h5 class="items">Unlimited Courses</h5>
+                  <h5 class="items">Gym Membership</h5>
+                  <h5 class="items">Nutrition plan</h5>
+                  <h5 class="items">1 Exclusive Trainer</h5>
+                  <h5 class="items">1 Hours Max Per Day</h5>
+                  <h5 class="items">3 Classes</h5>
+                  <button class="btn-select">BUY</button>
+                </div>
+                <div class="membership-option GOLD">
+                  <h2>GOLD</h2>
+                  <p>₨425/month</p>
+                  <h5 class="items">Unlimited Courses</h5>
+                  <h5 class="items">Gym Membershib</h5>
+                  <h5 class="items">Nutrition & Fitness Plans</h5>
+                  <h5 class="items">2 Hours Max Per Day</h5>
+                  <h5 class="items">1 Exclusive Trainer</h5>
+                  <h5 class="items">5 classes</h5>
+                  <button class="btn-select">BUY</button>
+                </div>
+                <div class="membership-option PLATIUM">
+                  <h2>PLATIUM</h2>
+                  <p>₨550/month</p>
+                  <h5 class="items">Unlimited Courses</h5>
+                  <h5 class="items">Gym Membershib</h5>
+                  <h5 class="items">Nutrition & Fitness Plans</h5>
+                  <h5 class="items">4 Hours Max Per Day</h5>
+                  <h5 class="items">1 Exclusive Trainer</h5>
+                  <h5 class="items">Unlimited classes</h5>
+                  <button class="btn-select">BUY</button>
+                </div>
+              </div>
+
+              <h1 class="center">Personal Training</h1>
+             <div class="personal-training-options">
+                <div class="personal-training-option peritem3">
+                  <h3>1 Month 12 Sessions</h3>
+                     <span class="peritem1">(Silver Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨2500 indclude</a>
+                     <p>₨7000</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+
+                <div class="personal-training-option peritem3">
+                     <h3>1 Month 12 Sessions</h3>
+                     <span class="peritem1">(Gold Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨2500 indclude</a>
+                     <p>₨8000</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+
+                <div class="personal-training-option peritem3">
+                     <h3>1 Month 12 Sessions</h3>
+                     <span class="peritem1">(Gold Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨2500 indclude</a>
+                     <p>₨9500</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+
+                <div class="personal-training-option peritem3">
+                     <h3>1 Month 12 Sessions</h3>
+                     <span class="peritem1">(Platinum Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨2500 indclude</a>
+                     <p>₨1000</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+
+
+                <div class="personal-training-option peritem3">
+                     <h3>3 Month 36 Sessions</h3>
+                     <span class="peritem1">(Gold  Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨3650 indclude</a>
+                     <p>₨18000</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+
+
+
+                <div class="personal-training-option peritem3">
+                     <h3>3 Month 36 Sessions</h3>
+                     <span class="peritem1">(Silver Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨3650 indclude</a>
+                     <p>₨23500</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+
+
+
+                <div class="personal-training-option peritem3">
+                     <h3>6 Month 72 Sessions</h3>
+                     <span class="peritem1">(Silver Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨2500 indclude</a>
+                     <p>₨32000</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+
+
+                <div class="personal-training-option peritem3">
+                     <h3>6 Month 144 Sessions</h3>
+                     <span class="peritem1">(Platinum Membership)</span>
+                     <p><span id="peritem2">✔</span> Free Fitness Grar</p>
+                     <p><span id="peritem2">✔</span> EMI Availabe</p>
+                     <a href="#">Benefits worth ₨2500 indclude</a>
+                     <p>₨63000</p>
+                  <button class="btn-select">BUY</button>
+                </div>
+                 </div>
+</body>
+</html>

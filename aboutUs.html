@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness Point</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        background-color: #fff;
+        font-family: 'Baloo Bhai', cursive;
+        color: rgb(231, 227, 240);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/15.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-blend-mode: lighten;
+        opacity: 10;
+    }
+
+    ._2n3 {
+        border-top: 1px solid #c7b582;
+        color: #ebe0e0;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .item {
+        flex: 33.33%;
+        height: 300px;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .franchise {
+        display: flex;
+    }
+
+    .fa-phone-square {
+        font-size: 17px;
+        margin-right: 10px;
+        color: #818181;
+    }
+
+    .fa-envelope {
+        font-size: 14px;
+        margin-right: 10px;
+        color: #818181;
+    }
+
+    .aboutHelp {
+        text-align: center;
+        color: #646464;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .aboutHelp .title {
+        color: #c19f3e;
+        font-size: 53px;
+        line-height: 57px;
+        text-align: center;
+    }
+
+    .aboutHelp p {
+        color: #646464;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+
+    .aboutFranchise p {
+        color: #646464;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
+        margin-top: 25px;
+        text-align: justify;
+        padding: 20px;
+    }
+
+
+
+    .feature.map iframe {
+        width: 100%;
+        height: 450px;
+        border: 0;
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+        /* Firefox 10+ */
+        filter: gray;
+        /* IE6-9 */
+        -webkit-filter: grayscale(99%);
+        /* Chrome 19+ & Safari 6+ */
+        -webkit-backface-visibility: hidden;
+        /* Fix for transition flickering */
+    }
+
+    .feature.map p {
+        color: #777;
+        padding: 0px 0px 0px 0px;
+    }
+    address {
+    line-height: 1.8em;
+    color: #2b2a2a;
+    font-size: 12px;
+    margin-bottom: 0;
+    float: left;
+    width: 50%;
+    background: #f3f1f1;
+    padding: 10px;
+    border: 10px solid #e6e6e6;
+}
+
+    .health-club {
+        margin-top: 50px;
+    }
+
+    .health-club ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .health-club ul li {
+        display: inline-block;
+        margin: 5px 30px;
+    }
+
+    .health-club ul li img {
+        border-radius: 50%;
+        border: #cdcdcd solid 1px;
+        padding: 30px 27px;
+    }
+
+    .health-club ul li img:hover {
+        border: none;
+        background: #d6d6d6;
+        border: transparent solid 1px;
+    }
+
+    .health-club p {
+        color: #404040;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 20px 0 10px;
+    }
+
+    .about-page ._2n3 .heading {
+        color: #c19f3e;
+    }
+
+    .headqrt-contact {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .headqrt-contact .title {
+    color: #c19f3e;
+    font-size: 22px;
+}
+
+    .headqrt-contact p {
+        color: #6d6d6d;
+        line-height: 32px;
+    }
+
+    .headqrt-contact a {
+        color: #6d6d6d;
+    }
+
+    .headqrt-contact a:hover {
+        text-decoration: underline;
+    }
+
+
+    .aboutFranchise {
+        color: #353535;
+        font-size: 18px;
+    }
+
+    .aboutFranchise h4 {
+        color: #505050;
+        font-size: 37px;
+        font-weight: 200;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .directorial p {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .headqrt-contact-left{
+        float: left;
+        width: 40%;
+        font-size: 14px;
+    }
+    .headqrt-contact-right{
+        float: right;
+        width: 60%;
+        height: 600px;
+    }
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/5.jpg" alt="">
+            <div>Fitness Point</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="membership.html">Membershib Package's</li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Sign up</button>
+        </div>
+    </header>
+    <div>
+        <section id="showcase">
+            <div class="container">
+                <font color="red">
+                    <h1><i>About us</i></h1>
+                </font color="black">
+                <p>Fitness Point was conceptualized keeping in mind the rationale behind multi specialty centre concept.
+                    At Ozone we integrate all the possible relaxation, exercises and group exercise techniques,
+                    i,e.,“gym, spa, yoga, aerobics” centers.are all under a single roof.</p>
+                <p>Fitness Point Clubs are the luxury health clubs and salons launched to satisfy the niche segment by
+                    revitalizing their senses and soothe the jitteriness of city life.</p>
+                <p>Fitness Point Spa Pvt. Ltd., incorporated on November 1, 2002 is the country's first largest chain of
+                    premier boutique health, fitness and spa.</p>
+                <p>O3 in the company logo symbolizes “strong protection of the human race”.</p>
+                <p>Fitness Point is the first chain of health clubs to be awarded the ISO-9001-2000 and ISO-14001
+                    certificates.</p>
+                <p>Headed by Robert Nicholsan as the chairman, Ozone has already received the Indira Gandhi
+                    Priyadarshini Award for the best chain of Eco-friendly health clubs in India.</p>
+                <p></p>
+        </section>
+    </div>
+    <div class="_2n3">
+        <abbr class="heading uppercase">Franchise info</abbr>
+    </div>
+    <div class="franchise">
+        <div class="item" id="block-one">
+            <span> Become a </span>
+            <br>
+            " partner "
+            <br>
+            <span> with </span>
+            <br>
+            " best "
+            <br>
+            " health club "
+            <br>
+            " and salon "
+            <br>
+            " chain "
+        </div>
+        <div class="item" id="block-two">
+            <p>
+                We welcome all the fitness enthusiasts and experts to join the Ozone Family and be a part of the healthy
+                revolution. We strive to provide a hassle free, value for money and world-class experience to our
+                partners.
+            </p>
+            <p>
+                The Fitness Point franchising program has been designed to give the opportunity to benefit from our
+                history of success by franchising the Fitness Point club brand and becoming a part of the strongest name
+                in the fitness industry.
+            </p>
+            <a href="#">
+                <button type="button" class="btn btn-default"> Request franchise </button>
+            </a>
+        </div>
+        <div class="item" id="block-three">
+            <div class="title"> Contact for Franchise </div>
+
+            <address> D-27, Defence Colony <br>
+                New Delhi-110024 (INDIA) </address> <br>
+            <p> <i class="fa fa-phone-square"></i><a href="tel:+91-8750883333  ">+91-8750883333 </a> </p>
+            <p>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:franchise@fitnessclub.com">franchise@fitnessclub.com </a> <br>
+                <span> </span>
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="aboutHelp">
+        <div class="title"> Help build a healthier nation with <br>
+            Nation’s best health club and salon chain </div>
+        <p> The aim is to deliver perfection and taking fitness quotient to the new heights. Health should be everyone’s
+            <br>
+            priority and our priority is to make it accessible to everyone </p>
+    </div>
+    </div>
+    <div class="health-club">
+        <ul>
+            <li><img src="img/team.png" width="40" height="40">
+                <p>A concept to enhance the experience</p>
+            </li>
+            <li><img src="img/money.jfif" width="40" height="40">
+                <p>No heavy investments </p>
+            </li>
+            <li><img src="img/services.png" width="40" height="40">
+                <p>No complex procedure</p>
+            </li>
+            <li><img src="img/support.png" width="40" height="40">
+                <p>We support you at every step</p>
+            </li>
+        </ul>
+    </div>
+    <div class="_2n3"><h2 >Headquater</h2>
+        <div class="headqrt-contact-left">
+            <div class="title"> Registered Office </div>
+            <address>
+                M-91/132, Connaught Circus <br>
+                New Delhi - 110001 (INDIA) 
+            </address>
+            <br>
+            <br>
+
+            <div class="title"> Corporate Office </div>
+            <address> D-27, Defence Colony <br>
+                New Delhi-110024 (INDIA) 
+            </address>
+            <br>
+
+            <p><img src="img/contactus.png" width="40" height="40">+91-11-41550130 / 40 / 50</p>
+            <p><img src="img/fax.png" width="40" height="40">+91-11-24690119</p>
+            <p><img src="img/email.png" width="40" height="40"><a href="#">info@fitnessclub.com</a></p>
+        </div>
+        <div class="headqrt-contact-right">
+            <iframe frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=Defence Colony, New Delhi&amp;key=AIzaSyB9Fky_QGaNVEvKFLLdFXxVgUNqBdDE5tg"
+                allowfullscreen="" width="100%" height="285"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
